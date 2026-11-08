@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project - Homepage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.htm"><img src="logo.svg" alt=""></a>
+    </div>
+
+    <nav>
+      <a href="#home" class="home-link active">Home</a>
+      <a href="#about-me" class="aout-me-link">About Me</a>
+      <a href="#my-work" class="my-work-link">My Work</a>
+      <a href="#contact-me" class="contact-me-link">Contact Me</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="details">
+        <div class="text">
+          <p class="name">
+            <span class="first">STAINTON</span>
+            <span class="last">MAKALE</span>
+          </p>
+          <p class="title">Building digital experiences</p>
+          <span class="roles">SOFTWARE ENGINEERING STUDENT &middot; DEVELOPER</span>
+        </div>
+        <div class="hero-portrait">
+          <img src="images/generated/portrait-400.jpg"
+            srcset="images/generated/portrait-400.jpg 400w, images/generated/portrait-800.jpg 800w, images/generated/portrait-1600.jpg 1600w"
+            sizes="100vw" alt="" />
+        </div>
+      </div>
+
+      <div class="links">
+        <a href="#my-work" class="primary link">Explore my work</a>
+        <a href="#contact-me" class="secondary link">Let's connect</a>
+      </div>
+    </section>
+
+    <section class="about-me" id="about-me">
+      <div class="about-grid">
+        <div class="about-text">
+          <h1>About me</h1>
+          <p>I am a software engineering student proficient in frontend development, backend development
+            and problem solving. I am exploring deeper in software engineering, AI and other technologies.
+          </p>
+        </div>
+
+        <aside class="now-card" aria-label="What I'm up to right now">
+          <dl>
+            <div>
+              <dt>Learning</dt>
+              <dd>Networking</dd>
+            </div>
+            <div>
+              <dt>Building</dt>
+              <dd>A Library Management System</dd>
+            </div>
+            <div>
+              <dt>Open to</dt>
+              <dd>Internships &middot; Freelance</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+
+      <p class="eyebrow">Skills and Technologies</p>
+      <div class="skills-marquee">
+        <ul class="reverse">
+          <li>
+            <img src="icons/html.svg" alt="">
+            HTML
+          </li>
+          <li>
+            <img src="icons/css.svg" alt="">
+            CSS
+          </li>
+          <li>
+            <img src="icons/js.svg" alt="">
+            JavaScript
+          </li>
+          <li>
+            <img src="icons/react.svg" alt="">
+            React
+          </li>
+          <li class="express">
+            <img src="icons/express.svg" alt="">
+            Express
+          </li>
+          <li>
+            <img src="icons/c.svg" alt="">
+            C
+          </li>
+          <li>
+            <img src="icons/c++.svg" alt="">
+            C++
+          </li>
+        </ul>
+      </div>
+
+      <div class="skills-marquee">
+        <ul>
+          <li>
+            <img src="icons/problem-solving.svg" alt="">
+            Problem solving
+          </li>
+          <li>
+            <img src="icons/handshake.svg" alt="">
+            Clear communication
+          </li>
+          <li>
+            <img src="icons/git.svg" alt="">
+            Git
+          </li>
+          <li class="github">
+            <img src="icons/github.svg" alt="">
+            Github
+          </li>
+          <li>
+            <img src="icons/webpack.svg" alt="">
+            Webpack
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- <section class="about-me" id="about-me">
+      <h1>About me</h1>
+      <p>I am a software engineering student proficient in frontend development, backend development
+        and problem solving. I am exploring deeper in software engineering, AI and other technologies.
+      </p>
+
+      <div class="skills">
+        <h2>Skills and Technologies</h2>
+
+        <div class="skills-marquee">
+          <ul>
+            <li>
+              <img src="icons/problem-solving.svg" alt="">
+              Problem solving
+            </li>
+            <li>
+              <img src="icons/handshake.svg" alt="">
+              Clear communication
+            </li>
+            <li>
+              <img src="icons/html.svg" alt="">
+              HTML
+            </li>
+            <li>
+              <img src="icons/css.svg" alt="">
+              CSS
+            </li>
+            <li>
+              <img src="icons/js.svg" alt="">
+              JavaScript
+            </li>
+            <li>
+              <img src="icons/git.svg" alt="">
+              Git
+            </li>
+            <li class="github">
+              <img src="icons/github.svg" alt="">
+              Github
+            </li>
+            <li>
+              <img src="icons/webpack.svg" alt="">
+              Webpack
+            </li>
+            <li>
+              <img src="icons/react.svg" alt="">
+              React
+            </li>
+            <li class="express">
+              <img src="icons/express.svg" alt="">
+              Express
+            </li>
+            <li>
+              <img src="icons/c.svg" alt="">
+              C
+            </li>
+            <li>
+              <img src="icons/c++.svg" alt="">
+              C++
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="my-work" id="my-work">
+      <h1>My Work</h1>
+
+      <div class="cards-container">
+        <div class="project-card">
+          <div class="title">
+            <h2>Trecker</h2>
+            <p class="sub-title">Expense Tracker</p>
+          </div>
+          <img src="images/originals/expense-tracker-thumbnail.png" alt="" class="thumb">
+          <p class="desc">A project that demonstrates UI and data management through JavaScript fundamentals</p>
+          <div class="project-links">
+            <a href="https://makalestainton-creator.github.io/expense-tracker/" target="_blank" rel="noopener"
+              class="primary">Preview
+              <img src="icons/open-in-new-primary.svg" alt="">
+            </a>
+            <a href="https://github.com/makalestainton-creator/expense-tracker" target="_blank" rel="noopener"
+              class="secondary">Github
+              Repo
+              <img src="icons/open-in-new-secondary.svg" alt="">
+            </a>
+          </div>
+          <div class="stack">
+            <span>
+              <img src="icons/webpack.svg" alt="" class="webpack">
+              Webpack
+            </span>
+            <span>
+              <img src="icons/html.svg" alt="">
+              HTML
+            </span>
+            <span>
+              <img src="icons/css.svg" alt="">
+              CSS
+            </span>
+            <span>
+              <img src="icons/js.svg" alt="">
+              JavaScript
+            </span>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="title">
+            <h2>Battleship</h2>
+            <p class="sub-title">Web-based Battleship Game</p>
+          </div>
+          <img src="images/originals/battleship-thumbnail.png" alt="" class="thumb">
+          <p class="desc">A basic battleship game that demonstrates game logic handling and algorithms</p>
+          <div class="project-links">
+            <a href="https://makalestainton-creator.github.io/battleship/" target="_blank" rel="noopener"
+              class="primary">Preview
+              <img src="icons/open-in-new-primary.svg" alt="">
+            </a>
+            <a href="https://github.com/makalestainton-creator/battleship" target="_blank" rel="noopener"
+              class="secondary">Github
+              Repo
+              <img src="icons/open-in-new-secondary.svg" alt="">
+            </a>
+          </div>
+          <div class="stack">
+            <span>
+              <img src="icons/html.svg" alt="">
+              HTML
+            </span>
+            <span>
+              <img src="icons/css.svg" alt="">
+              CSS
+            </span>
+            <span>
+              <img src="icons/js.svg" alt="">
+              JavaScript
+            </span>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="title">
+            <h2>Amazon clone</h2>
+            <p class="sub-title">E-commerce website</p>
+          </div>
+          <img src="images/originals/amazon-thumbnail.png" alt="" class="thumb">
+          <p class="desc">Features a cart and numerous products served from a backend</p>
+          <div class="project-links">
+            <a href="https://makalestainton-creator.github.io/amazon-clone/" target="_blank" rel="noopener"
+              class="primary">Preview
+              <img src="icons/open-in-new-primary.svg" alt="">
+            </a>
+            <a href="https://github.com/makalestainton-creator/amazon-clone" target="_blank" rel="noopener"
+              class="secondary">Github
+              Repo
+              <img src="icons/open-in-new-secondary.svg" alt="">
+            </a>
+          </div>
+          <div class="stack">
+            <span>
+              <img src="icons/html.svg" alt="">
+              HTML
+            </span>
+            <span>
+              <img src="icons/css.svg" alt="">
+              CSS
+            </span>
+            <span>
+              <img src="icons/js.svg" alt="">
+              JavaScript
+            </span>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="title">
+            <h2>Threepik</h2>
+            <p class="sub-title">Restaurant Page</p>
+          </div>
+          <img src="images/originals/restaurant-page-thumbnail.png" alt="" class="thumb">
+          <p class="desc">A restaurant website that demonstrates the use of bundlers such as webpack</p>
+          <div class="project-links">
+            <a href="https://makalestainton-creator.github.io/restaurant-page/" target="_blank" rel="noopener"
+              class="primary">Preview
+              <img src="icons/open-in-new-primary.svg" alt="">
+            </a>
+            <a href="https://github.com/makalestainton-creator/restaurant-page" target="_blank" rel="noopener"
+              class="secondary">Github
+              Repo
+              <img src="icons/open-in-new-secondary.svg" alt="">
+            </a>
+          </div>
+          <div class="stack">
+            <span>
+              <img src="icons/webpack.svg" alt="">
+              Webpack
+            </span>
+            <span>
+              <img src="icons/html.svg" alt="">
+              HTML
+            </span>
+            <span>
+              <img src="icons/css.svg" alt="">
+              CSS
+            </span>
+            <span>
+              <img src="icons/js.svg" alt="">
+              JavaScript
+            </span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="title">
+            <h2>Skyra</h2>
+            <p class="sub-title">Weather App</p>
+          </div>
+          <img src="images/originals/weather-app-thumbnail.png" alt="" class="thumb">
+          <p class="desc">Weather forecast website that uses APIs for functionality.</p>
+          <div class="project-links">
+            <a href="https://makalestainton-creator.github.io/weather-app/" target="_blank" rel="noopener"
+              class="primary">Preview
+              <img src="icons/open-in-new-primary.svg" alt="">
+            </a>
+            <a href="https://github.com/makalestainton-creator/weather-app" target="_blank" rel="noopener"
+              class="secondary">Github
+              Repo
+              <img src="icons/open-in-new-secondary.svg" alt="">
+            </a>
+          </div>
+          <div class="stack">
+            <span>
+              <img src="icons/webpack.svg" alt="">
+              Webpack
+            </span>
+            <span>
+              <img src="icons/html.svg" alt="">
+              HTML
+            </span>
+            <span>
+              <img src="icons/css.svg" alt="">
+              CSS
+            </span>
+            <span>
+              <img src="icons/js.svg" alt="">
+              JavaScript
+            </span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="title">
+            <h2>Taskey</h2>
+            <p class="sub-title">Todo List</p>
+          </div>
+          <img src="images/originals/todo-list-thumbnail.jpg" alt="" class="thumb">
+          <p class="desc">A web-based todo list that captures routines. It demonstrates data persistence.</p>
+          <div class="project-links">
+            <a href="https://makalestainton-creator.github.io/todo-list/" target="_blank" rel="noopener"
+              class="primary">Preview
+              <img src="icons/open-in-new-primary.svg" alt="">
+            </a>
+            <a href="https://github.com/makalestainton-creator/todo-list" target="_blank" rel="noopener"
+              class="secondary">Github
+              Repo
+              <img src="icons/open-in-new-secondary.svg" alt="">
+            </a>
+          </div>
+          <div class="stack">
+            <span>
+              <img src="icons/webpack.svg" alt="">
+              Webpack
+            </span>
+            <span>
+              <img src="icons/html.svg" alt="">
+              HTML
+            </span>
+            <span>
+              <img src="icons/css.svg" alt="">
+              CSS
+            </span>
+            <span>
+              <img src="icons/js.svg" alt="">
+              JavaScript
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts-sect" id="contact-me">
+      <p class="eyebrow">Contact</p>
+      <h2 class="primary">Let's build something exceptional together.</h2>
+      <p class="sub">Open to internships, freelance work and collaborations. Email (<a href="mailto:makalestainton@gmail.com" class="mail-span">makalestainton@gmail.com</a>) is the
+        fastest way to reach me.</p>
+      <div class="contacts">
+        <a href="mailto:makalestainton@gmail.com" class="link-primary">
+          <img src="icons/email.svg" alt="">
+          Email
+        </a>
+        <a href="https://github.com/makalestainton-creator" class="link-secondary">
+          <img src="icons/github-secondary.svg" alt="">
+          Github
+        </a>
+        <a href="https://www.linkedin.com/in/stainton-nyapola-74973a439/" class="link-secondary">
+          <img src="icons/linkedin.svg" alt="">
+          LinkedIn
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer>Copyright &copy; 2026 Stainton Makale</footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
