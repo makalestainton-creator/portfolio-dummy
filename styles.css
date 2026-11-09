@@ -152,7 +152,7 @@ section.hero {
   display: flex;
   flex-direction: column;
 
-  font-size: 8rem;
+  font-size: clamp(5rem, 10vw, 8rem);
   line-height: normal;
   position: relative;
 }
@@ -160,8 +160,8 @@ section.hero {
 .hero .name::before {
   content: "";
   position: absolute;
-  top: 1.5rem;
-  bottom: 1.5rem;
+  top: 1.2rem;
+  bottom: 1.2rem;
   left: -10px;
 
   width: 4px;
@@ -170,12 +170,12 @@ section.hero {
 }
 
 .hero .title {
-  font-size: 2rem;
+  font-size: clamp(1.7rem, 10vw, 2rem);
   color: var(--berry);
 }
 
 .hero .roles {
-  font-size: 0.8rem;
+  font-size: clamp(0.7rem, 10vw, 0.8rem);
   color: var(--peach);
 }
 
@@ -574,4 +574,37 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 1000px) {
+  .hero .details {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .hero .name {
+    font-size: clamp(2rem, 10vw, 3rem);
+  }
+
+  .hero .title {
+    font-size: clamp(0.9rem, 10vw, 1.2rem);
+  }
+
+  .hero .roles {
+    font-size: clamp(0.6rem, 10vw, 0.7rem);
+  }
+
+  .hero-portrait {
+    width: 400px;
+    padding: 0;
+  }
+
+  .hero .links .link {
+    padding: 0.6rem 0.8rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
 }
