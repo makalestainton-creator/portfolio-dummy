@@ -16,14 +16,31 @@
 <body>
   <header>
     <div class="logo">
-      <a href="index.htm"><img src="logo.svg" alt=""></a>
+      <a href="index.htm">
+        <picture>
+          <source media="(max-width: 600px)" srcset="favicon.svg" />
+          <img src="logo.svg" alt="Stain, home" />
+        </picture>
+      </a>
     </div>
 
-    <nav>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+      <span class="hamburger"></span>
+    </button>
+
+    <nav class="desktop-nav">
       <a href="#home" class="home-link active">Home</a>
       <a href="#about-me" class="aout-me-link">About Me</a>
       <a href="#my-work" class="my-work-link">My Work</a>
       <a href="#contact-me" class="contact-me-link">Contact Me</a>
+    </nav>
+
+    <nav class="mobile-nav" hidden>
+      <img src="logo.svg" alt="logo">
+      <a href="#home" class="home-link active"><img src="icons/home.svg" alt="">Home</a>
+      <a href="#about-me" class="aout-me-link"><img src="icons/about-me.svg" alt="">About Me</a>
+      <a href="#my-work" class="my-work-link"><img src="icons/my-work.svg" alt="">My Work</a>
+      <a href="#contact-me" class="contact-me-link"><img src="icons/mail.svg" alt="">Contact Me</a>
     </nav>
   </header>
   <main>
@@ -40,7 +57,7 @@
         <div class="hero-portrait">
           <img src="images/generated/portrait-400.jpg"
             srcset="images/generated/portrait-400.jpg 400w, images/generated/portrait-800.jpg 800w, images/generated/portrait-1600.jpg 1600w"
-            sizes="100vw" alt="" />
+            sizes="(min-width: 1000px) 40vw, 100vw" alt="" />
         </div>
       </div>
 
@@ -137,70 +154,6 @@
       </div>
     </section>
 
-    <!-- <section class="about-me" id="about-me">
-      <h1>About me</h1>
-      <p>I am a software engineering student proficient in frontend development, backend development
-        and problem solving. I am exploring deeper in software engineering, AI and other technologies.
-      </p>
-
-      <div class="skills">
-        <h2>Skills and Technologies</h2>
-
-        <div class="skills-marquee">
-          <ul>
-            <li>
-              <img src="icons/problem-solving.svg" alt="">
-              Problem solving
-            </li>
-            <li>
-              <img src="icons/handshake.svg" alt="">
-              Clear communication
-            </li>
-            <li>
-              <img src="icons/html.svg" alt="">
-              HTML
-            </li>
-            <li>
-              <img src="icons/css.svg" alt="">
-              CSS
-            </li>
-            <li>
-              <img src="icons/js.svg" alt="">
-              JavaScript
-            </li>
-            <li>
-              <img src="icons/git.svg" alt="">
-              Git
-            </li>
-            <li class="github">
-              <img src="icons/github.svg" alt="">
-              Github
-            </li>
-            <li>
-              <img src="icons/webpack.svg" alt="">
-              Webpack
-            </li>
-            <li>
-              <img src="icons/react.svg" alt="">
-              React
-            </li>
-            <li class="express">
-              <img src="icons/express.svg" alt="">
-              Express
-            </li>
-            <li>
-              <img src="icons/c.svg" alt="">
-              C
-            </li>
-            <li>
-              <img src="icons/c++.svg" alt="">
-              C++
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section> -->
-
     <section class="my-work" id="my-work">
       <h1>My Work</h1>
 
@@ -210,7 +163,8 @@
             <h2>Trecker</h2>
             <p class="sub-title">Expense Tracker</p>
           </div>
-          <img src="images/originals/expense-tracker-thumbnail.png" alt="" class="thumb">
+          <img src="images/originals/expense-tracker-thumbnail.png" alt="expense tracker thumbnail" class="thumb"
+            loading="lazy">
           <p class="desc">A project that demonstrates UI and data management through JavaScript fundamentals</p>
           <div class="project-links">
             <a href="https://makalestainton-creator.github.io/expense-tracker/" target="_blank" rel="noopener"
@@ -242,12 +196,14 @@
             </span>
           </div>
         </div>
+        
         <div class="project-card">
           <div class="title">
             <h2>Battleship</h2>
             <p class="sub-title">Web-based Battleship Game</p>
           </div>
-          <img src="images/originals/battleship-thumbnail.png" alt="" class="thumb">
+          <img src="images/originals/battleship-thumbnail.png" alt="battleship project thumbnail" class="thumb"
+            loading="lazy">
           <p class="desc">A basic battleship game that demonstrates game logic handling and algorithms</p>
           <div class="project-links">
             <a href="https://makalestainton-creator.github.io/battleship/" target="_blank" rel="noopener"
@@ -275,12 +231,14 @@
             </span>
           </div>
         </div>
+
         <div class="project-card">
           <div class="title">
             <h2>Amazon clone</h2>
             <p class="sub-title">E-commerce website</p>
           </div>
-          <img src="images/originals/amazon-thumbnail.png" alt="" class="thumb">
+          <img src="images/originals/amazon-thumbnail.png" alt="e-commerce website thumbnail" class="thumb"
+            loading="lazy">
           <p class="desc">Features a cart and numerous products served from a backend</p>
           <div class="project-links">
             <a href="https://makalestainton-creator.github.io/amazon-clone/" target="_blank" rel="noopener"
@@ -308,12 +266,14 @@
             </span>
           </div>
         </div>
+
         <div class="project-card">
           <div class="title">
             <h2>Threepik</h2>
             <p class="sub-title">Restaurant Page</p>
           </div>
-          <img src="images/originals/restaurant-page-thumbnail.png" alt="" class="thumb">
+          <img src="images/originals/restaurant-page-thumbnail.png" alt="restaurant page thumbnail" class="thumb"
+            loading="lazy">
           <p class="desc">A restaurant website that demonstrates the use of bundlers such as webpack</p>
           <div class="project-links">
             <a href="https://makalestainton-creator.github.io/restaurant-page/" target="_blank" rel="noopener"
@@ -351,7 +311,8 @@
             <h2>Skyra</h2>
             <p class="sub-title">Weather App</p>
           </div>
-          <img src="images/originals/weather-app-thumbnail.png" alt="" class="thumb">
+          <img src="images/originals/weather-app-thumbnail.png" alt="weather app thumbnail class=" thumb"
+            loading="lazy">
           <p class="desc">Weather forecast website that uses APIs for functionality.</p>
           <div class="project-links">
             <a href="https://makalestainton-creator.github.io/weather-app/" target="_blank" rel="noopener"
@@ -389,7 +350,8 @@
             <h2>Taskey</h2>
             <p class="sub-title">Todo List</p>
           </div>
-          <img src="images/originals/todo-list-thumbnail.jpg" alt="" class="thumb">
+          <img src="images/originals/todo-list-thumbnail.jpg" alt="todo list website thumbnail" class="thumb"
+            loading="lazy">
           <p class="desc">A web-based todo list that captures routines. It demonstrates data persistence.</p>
           <div class="project-links">
             <a href="https://makalestainton-creator.github.io/todo-list/" target="_blank" rel="noopener"
@@ -427,7 +389,8 @@
     <section class="contacts-sect" id="contact-me">
       <p class="eyebrow">Contact</p>
       <h2 class="primary">Let's build something exceptional together.</h2>
-      <p class="sub">Open to internships, freelance work and collaborations. Email (<a href="mailto:makalestainton@gmail.com" class="mail-span">makalestainton@gmail.com</a>) is the
+      <p class="sub">Open to internships, freelance work and collaborations. Email (<a
+          href="mailto:makalestainton@gmail.com" class="mail-span">makalestainton@gmail.com</a>) is the
         fastest way to reach me.</p>
       <div class="contacts">
         <a href="mailto:makalestainton@gmail.com" class="link-primary">

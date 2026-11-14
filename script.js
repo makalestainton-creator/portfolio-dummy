@@ -2,6 +2,38 @@ const navLinks = document.querySelectorAll("nav a");
 const homeLink = document.querySelector(".home-link");
 const sections = document.querySelectorAll("section");
 const cards = document.querySelectorAll(".project-card");
+const toggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector("nav.mobile-nav");
+
+function closeNav() {
+  nav.classList.remove("open");
+  toggle.setAttribute("aria-expanded", "false");
+}
+
+toggle.addEventListener("click", () => {
+  const isOpen = nav.classList.toggle("open");
+  toggle.setAttribute("aria-expanded", isOpen);
+});
+
+nav.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", closeNav);
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && nav.classList.contains("open")) {
+    closeNav();
+    toggle.focus();
+  }
+});
+
+// close when clicking outside (the overlay is to the right of the menu)
+document.addEventListener("click", (e) => {
+  if (!nav.classList.contains("open")) return;
+  if (toggle.contains(e.target)) return; // the toggle handles itself
+
+  const { right } = nav.getBoundingClientRect();
+  if (e.clientX > right) closeNav();
+});
 
 activateLink(homeLink);
 
